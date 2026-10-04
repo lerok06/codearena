@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>Возможности — CodeArena</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="logo"><span class="logo__mark">CA</span> CodeArena</a>
+    <button class="nav__toggle" aria-label="Меню">☰</button>
+    <div class="nav__links" id="navLinks">
+      <a href="index.html">Главная</a>
+      <a href="demo.html">Демо-батл</a>
+      <a href="practice.html">Практика</a>
+      <a href="spectator.html">Зрительский</a>
+      
+      <a href="contacts.html">Контакты</a>
+      
+      <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+        <span class="theme-toggle__icon">🌙</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Функционал</span>
+        <h2>Возможности системы</h2>
+        <p>Шесть ключевых модулей платформы CodeArena.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="card">
+          <div class="card__icon">👤</div>
+          <h3>Личный кабинет</h3>
+          <p>Регистрация, профиль с рейтингом (ПТС), статистика побед и поражений.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">⚔️</div>
+          <h3>Матчмейкинг</h3>
+          <p>Автоматический подбор соперников с близким уровнем навыка.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">🔒</div>
+          <h3>Sandbox</h3>
+          <p>Изолированная среда для компиляции и запуска кода на Python, C++, Java, JS.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">🧩</div>
+          <h3>Система задач</h3>
+          <p>База алгоритмических задач с автоматической проверкой решения.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">⚡</div>
+          <h3>Режим реального времени</h3>
+          <p>Прогресс-бар соперника, чат и таймер во время батла.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">📺</div>
+          <h3>Зрительский режим</h3>
+          <p>Возможность наблюдать за батлом в прямом эфире.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Технологии</span>
+        <h2>Требуемый стек</h2>
+        <p>Технологии, которые ранее не использовались в организации.</p>
+      </div>
+      <div class="stack">
+        <span>Docker</span>
+        <span>Kubernetes</span>
+        <span>PostgreSQL</span>
+        <span>Redis</span>
+        <span>React</span>
+        <span>Node.js</span>
+        <span>Python (Django / FastAPI)</span>
+        <span>Nginx</span>
+        <span>WebSocket</span>
+        <span>RabbitMQ</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer__inner">
+    <div><b>CodeArena</b> — платформа для киберспортивных батлов</div>
+    <div>Злыднева, Кондратьев · 2026</div>
+  </div>
+</footer>
+
+<script src="js/auth.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

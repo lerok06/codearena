@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>Контакты и команда — CodeArena</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="logo"><span class="logo__mark">CA</span> CodeArena</a>
+    <button class="nav__toggle" aria-label="Меню">☰</button>
+    <div class="nav__links" id="navLinks">
+      <a href="index.html">Главная</a>
+      <a href="demo.html">Демо-батл</a>
+      <a href="practice.html">Практика</a>
+      <a href="spectator.html">Зрительский</a>
+      
+      <a href="contacts.html">Контакты</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+        <span class="theme-toggle__icon">🌙</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <!-- КОНТАКТЫ -->
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Свяжитесь с нами</span>
+        <h2>Контакты</h2>
+        <p>Есть вопросы, предложения или хотите стать партнёром? Напишите нам.</p>
+      </div>
+
+      <div class="contact-grid">
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Спасибо! Мы свяжемся с вами в ближайшее время.');">
+          <div class="form-group">
+            <label for="name">Имя</label>
+            <input type="text" id="name" placeholder="Ваше имя" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Тема</label>
+            <select id="subject">
+              <option>Общий вопрос</option>
+              <option>Сотрудничество</option>
+              <option>Техническая поддержка</option>
+              <option>Пресса</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Сообщение</label>
+            <textarea id="message" rows="5" placeholder="Ваше сообщение..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Отправить →</button>
+        </form>
+
+        <div class="contact-info">
+          <div class="card">
+            <div class="card__icon">📧</div>
+            <h3>Email</h3>
+            <p>kondratiev@gmail.com</p>
+          </div>
+          <div class="card">
+            <div class="card__icon">💬</div>
+            <h3>Telegram</h3>
+            <p>@faerwolk</p>
+          </div>
+          <div class="card">
+            <div class="card__icon">📍</div>
+            <h3>Адрес</h3>
+            <p>Брянск, ул. Воровского, 4</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- КОМАНДА (списком) -->
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Команда</span>
+        <h2>Кто работает над CodeArena</h2>
+        <p>Три участника, каждый совмещает управленческую роль с разработкой.</p>
+      </div>
+
+      <div class="team-list">
+
+        <div class="team-item">
+          <div class="team-item__avatar avatar avatar--a">РП</div>
+          <div class="team-item__info">
+            <h3>Руководитель проекта</h3>
+            <span class="team-item__role">Злыднева В.А.</span>
+          </div>
+          <p class="team-item__desc">Архитектура, общее управление, интеграция модулей, соблюдение сроков.</p>
+        </div>
+
+        <div class="team-item">
+          <div class="team-item__avatar avatar avatar--b">СА</div>
+          <div class="team-item__info">
+            <h3>Системный аналитик</h3>
+            <span class="team-item__role">Злыднева В.А. Кондратьев А.А.</span>
+          </div>
+          <p class="team-item__desc">Сбор требований, проектирование БД, описание API, техническая документация.</p>
+        </div>
+
+        <div class="team-item">
+          <div class="team-item__avatar avatar avatar--c">ТС</div>
+          <div class="team-item__info">
+            <h3>Тестировщик</h3>
+            <span class="team-item__role">Кондратьев А.А.</span>
+          </div>
+          <p class="team-item__desc">Тест-кейсы, нагрузочное тестирование, проверка уязвимостей sandbox, UI/UX.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer__inner">
+    <div><b>CodeArena</b> — платформа для киберспортивных батлов</div>
+    <div>Злыднева, Кондратьев · 2026</div>
+  </div>
+</footer>
+
+<script src="js/auth.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

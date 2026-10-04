@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>Команда — CodeArena</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="logo"><span class="logo__mark">CA</span> CodeArena</a>
+    <button class="nav__toggle" aria-label="Меню">☰</button>
+    <div class="nav__links" id="navLinks">
+      <a href="index.html">Главная</a>
+      <a href="demo.html">Демо-батл</a>
+      <a href="practice.html">Практика</a>
+      <a href="spectator.html">Зрительский</a>
+      
+      <a href="contacts.html">Контакты</a>
+      
+      <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+        <span class="theme-toggle__icon">🌙</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Команда</span>
+        <h2>Распределение ролей</h2>
+        <p>Три участника, каждый совмещает управленческую роль с разработкой.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="role">
+          <div class="role__top">
+            <div class="avatar avatar--a">РП</div>
+            <h3>Руководитель проекта <small>Разработчик</small></h3>
+          </div>
+          <p>Архитектура, общее управление, интеграция модулей, соблюдение сроков.</p>
+        </article>
+        <article class="role">
+          <div class="role__top">
+            <div class="avatar avatar--b">СА</div>
+            <h3>Системный аналитик <small>Разработчик</small></h3>
+          </div>
+          <p>Сбор требований, проектирование БД, описание API, техническая документация.</p>
+        </article>
+        <article class="role">
+          <div class="role__top">
+            <div class="avatar avatar--c">ТС</div>
+            <h3>Тестировщик <small>Разработчик</small></h3>
+          </div>
+          <p>Тест-кейсы, нагрузочное тестирование, проверка уязвимостей sandbox, UI/UX.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer__inner">
+    <div><b>CodeArena</b> — платформа для киберспортивных батлов</div>
+    <div>Злыднева, Кондратьев · 2026</div>
+  </div>
+</footer>
+
+<script src="js/auth.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

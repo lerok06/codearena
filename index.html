@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>CodeArena — платформа для киберспортивных батлов</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="logo">
+      <span class="logo__mark">CA</span> CodeArena
+    </a>
+    <button class="nav__toggle" aria-label="Меню">☰</button>
+    <div class="nav__links" id="navLinks">
+      <a href="index.html">Главная</a>
+      <a href="demo.html">Демо-батл</a>
+      <a href="practice.html">Практика</a>
+      <a href="spectator.html">Зрительский</a>
+      
+      <a href="contacts.html">Контакты</a>
+      
+      <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+        <span class="theme-toggle__icon">🌙</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <h1>CodeArena<br><span class="grad">киберспорт для программистов</span></h1>
+    <p class="hero__lead">
+      CodeArena превращает обучение программированию в киберспорт. Решай
+      алгоритмические задачи на скорость, сражайся с соперниками с близким
+      рейтингом, наблюдай за матчами в прямом эфире. Код выполняется в
+      изолированной среде — безопасно и быстро.
+    </p>
+    <div class="hero__actions">
+      <a href="demo.html" class="btn btn--primary">Попробовать демо-батл</a>
+      <a href="contacts.html" class="btn btn--ghost">Контакты</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ВОЗМОЖНОСТИ (Bento-lite) -->
+  <section class="bento-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Функционал</span>
+        <h2>Возможности</h2>
+        <p>Шесть ключевых модулей платформы CodeArena.</p>
+      </div>
+
+      <div class="bento">
+
+        <!-- Большая карточка — Личный кабинет (заполняется через JS) -->
+        <div class="bento__card bento__card--big" id="bentoProfile">
+          <div class="bento__icon">👤</div>
+          <h3>Личный кабинет</h3>
+          <p>Создай профиль, чтобы сохранять прогресс, рейтинг и историю матчей.</p>
+        </div>
+
+        <a href="features.html" class="bento__card bento__card--small">
+          <div class="bento__icon">⚔️</div>
+          <h3>Матчмейкинг</h3>
+          <p>Подбор соперников с близким уровнем.</p>
+        </a>
+
+        <a href="features.html" class="bento__card bento__card--small">
+          <div class="bento__icon">🔒</div>
+          <h3>Sandbox</h3>
+          <p>Изолированная среда для кода.</p>
+        </a>
+
+        <a href="features.html" class="bento__card bento__card--small">
+          <div class="bento__icon">🧩</div>
+          <h3>Система задач</h3>
+          <p>База задач с автопроверкой.</p>
+        </a>
+
+        <a href="features.html" class="bento__card bento__card--small">
+          <div class="bento__icon">⚡</div>
+          <h3>Realtime</h3>
+          <p>Прогресс-бар, чат и таймер.</p>
+        </a>
+
+        <a href="spectator.html" class="bento__card bento__card--wide">
+          <div class="bento__icon">📺</div>
+          <div>
+            <h3>Зрительский режим</h3>
+            <p>Наблюдай за батлом в прямом эфире — прогресс, чат, итоги матча.</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ТАРИФЫ -->
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Монетизация</span>
+        <h2>Тарифы</h2>
+        <p>Начни бесплатно — перейди на премиум, когда захочешь большего.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Free</h3>
+          <div class="pricing-price">0 ₽<small>/мес</small></div>
+          <ul class="pricing-features">
+            <li>✅ Рейтинговые батлы</li>
+            <li>✅ Общая база задач</li>
+            <li>✅ Зрительский режим</li>
+            <li>❌ Эксклюзивные задачи</li>
+            <li>❌ ИИ-анализ кода</li>
+            <li>❌ Приоритетный матчмейкинг</li>
+          </ul>
+          <a href="pricing.html" class="btn btn--ghost">Начать бесплатно</a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-badge">Популярный</div>
+          <h3>Pro</h3>
+          <div class="pricing-price">499 ₽<small>/мес</small></div>
+          <ul class="pricing-features">
+            <li>✅ Всё из Free</li>
+            <li>✅ Эксклюзивные задачи</li>
+            <li>✅ ИИ-анализ кода</li>
+            <li>✅ Приоритетный матчмейкинг</li>
+            <li>✅ Расширенная статистика</li>
+            <li>✅ Без рекламы</li>
+          </ul>
+          <a href="pricing.html" class="btn btn--primary">Оформить Pro</a>
+        </div>
+
+        <div class="pricing-card">
+          <h3>Team</h3>
+          <div class="pricing-price">1 990 ₽<small>/мес</small></div>
+          <ul class="pricing-features">
+            <li>✅ Всё из Pro</li>
+            <li>✅ До 5 участников</li>
+            <li>✅ Приватные турниры</li>
+            <li>✅ Корпоративный рейтинг</li>
+            <li>✅ API-доступ</li>
+            <li>✅ Персональный менеджер</li>
+          </ul>
+          <a href="pricing.html" class="btn btn--ghost">Связаться</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Частые вопросы</span>
+        <h2>FAQ</h2>
+        <p>Ответы на популярные вопросы о платформе CodeArena.</p>
+      </div>
+
+      <details open>
+        <summary>Что такое CodeArena?</summary>
+        <div class="details__body">
+          <p>CodeArena — это веб-платформа для проведения соревнований по программированию в формате реального времени. Вы сражаетесь с другими программистами в PvP-батлах, решая алгоритмические задачи.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Какие языки программирования поддерживаются?</summary>
+        <div class="details__body">
+          <p>На старте: JavaScript, Python и C#. В будущем планируем добавить C++, Java, Go и Rust.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Как работает система рейтинга?</summary>
+        <div class="details__body">
+          <p>Используется рейтинг ELO, как в шахматах. Победа над более сильным соперником даёт больше очков, поражение от слабого — отнимает больше. Это обеспечивает честный матчмейкинг.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Безопасно ли запускать мой код на вашей платформе?</summary>
+        <div class="details__body">
+          <p>Да. Код выполняется в изолированных контейнерах (Docker + gVisor), которые не имеют доступа к основной системе. Ваш код не может навредить серверу или другим пользователям.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Сколько стоит участие?</summary>
+        <div class="details__body">
+          <p>Базовый доступ бесплатный: участие в рейтинговых батлах, доступ к общей базе задач. Премиум-подписка открывает эксклюзивные задачи и ИИ-анализ кода. Подробнее — на странице <a href="pricing.html" style="color:var(--accent-2)">Тарифы</a>.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Можно ли смотреть батлы других игроков?</summary>
+        <div class="details__body">
+          <p>Да, у нас есть зрительский режим. Вы можете наблюдать за батлом в прямом эфире, видеть прогресс обоих игроков и общаться в чате.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer__inner">
+    <div><b>CodeArena</b> — платформа для киберспортивных батлов</div>
+    <div>Злыднева, Кондратьев · 2026</div>
+  </div>
+</footer>
+
+<script src="js/auth.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

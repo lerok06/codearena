@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>Тарифы — CodeArena</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="logo"><span class="logo__mark">CA</span> CodeArena</a>
+    <button class="nav__toggle" aria-label="Меню">☰</button>
+    <div class="nav__links" id="navLinks">
+      <a href="index.html">Главная</a>
+      <a href="demo.html">Демо-батл</a>
+      <a href="practice.html">Практика</a>
+      <a href="spectator.html">Зрительский</a>
+      
+      <a href="contacts.html">Контакты</a>
+      
+      <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+        <span class="theme-toggle__icon">🌙</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Монетизация</span>
+        <h2>Тарифы</h2>
+        <p>Выберите подходящий план. Начните бесплатно — перейдите на премиум, когда захотите большего.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Free</h3>
+          <div class="pricing-price">0 ₽<small>/мес</small></div>
+          <ul class="pricing-features">
+            <li>✅ Рейтинговые батлы</li>
+            <li>✅ Общая база задач</li>
+            <li>✅ Зрительский режим</li>
+            <li>❌ Эксклюзивные задачи</li>
+            <li>❌ ИИ-анализ кода</li>
+            <li>❌ Приоритетный матчмейкинг</li>
+          </ul>
+          <a href="demo.html" class="btn btn--ghost">Начать бесплатно</a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-badge">Популярный</div>
+          <h3>Pro</h3>
+          <div class="pricing-price">499 ₽<small>/мес</small></div>
+          <ul class="pricing-features">
+            <li>✅ Всё из Free</li>
+            <li>✅ Эксклюзивные задачи</li>
+            <li>✅ ИИ-анализ кода</li>
+            <li>✅ Приоритетный матчмейкинг</li>
+            <li>✅ Расширенная статистика</li>
+            <li>✅ Без рекламы</li>
+          </ul>
+          <a href="contacts.html" class="btn btn--primary">Оформить Pro</a>
+        </div>
+
+        <div class="pricing-card">
+          <h3>Team</h3>
+          <div class="pricing-price">1 990 ₽<small>/мес</small></div>
+          <ul class="pricing-features">
+            <li>✅ Всё из Pro</li>
+            <li>✅ До 5 участников</li>
+            <li>✅ Приватные турниры</li>
+            <li>✅ Корпоративный рейтинг</li>
+            <li>✅ API-доступ</li>
+            <li>✅ Персональный менеджер</li>
+          </ul>
+          <a href="contacts.html" class="btn btn--ghost">Связаться</a>
+        </div>
+      </div>
+
+      <div class="pricing-tournaments">
+        <h3>Платные турниры</h3>
+        <p>Регулярные турниры с призовыми фондами. Взнос — от 200 ₽, призовой фонд формируется из взносов и спонсорских средств.</p>
+        <a href="demo.html" class="btn btn--primary">Попробовать демо-батл →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer__inner">
+    <div><b>CodeArena</b> — платформа для киберспортивных батлов</div>
+    <div>Злыднева, Кондратьев · 2026</div>
+  </div>
+</footer>
+
+<script src="js/auth.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

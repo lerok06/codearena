@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>Практика — CodeArena</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"></script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="logo"><span class="logo__mark">CA</span> CodeArena</a>
+    <button class="nav__toggle" aria-label="Меню">☰</button>
+    <div class="nav__links" id="navLinks">
+      <a href="index.html">Главная</a>
+      <a href="demo.html">Демо-батл</a>
+      <a href="practice.html">Практика</a>
+      <a href="spectator.html">Зрительский</a>
+      <a href="contacts.html">Контакты</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+        <span class="theme-toggle__icon">🌙</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Практика</span>
+        <h2>Практика</h2>
+        <p>Все задачи выбранной категории. Соперник — сильный игрок, ошибается редко.</p>
+      </div>
+
+      <div class="battle-intro" id="battleIntro">
+        <h3>1. Выбери категорию</h3>
+
+        <div class="category-grid category-grid--bento" id="categoryGrid">
+          <button class="category-card" data-category="math">
+            <span class="category-card__icon">🧮</span>
+            <span class="category-card__title">Математика</span>
+            <span class="category-card__desc">Формулы и вычисления</span>
+          </button>
+
+          <button class="category-card" data-category="shop">
+            <span class="category-card__icon">🛒</span>
+            <span class="category-card__title">Магазины</span>
+            <span class="category-card__desc">Скидки, купоны, корзина</span>
+          </button>
+
+          <button class="category-card" data-category="games">
+            <span class="category-card__icon">🎮</span>
+            <span class="category-card__title">Игры</span>
+            <span class="category-card__desc">Dota, CS2, FIFA</span>
+          </button>
+
+          <button class="category-card category-card--bottom" data-category="code">
+            <span class="category-card__icon">💻</span>
+            <span class="category-card__title">Программирование</span>
+            <span class="category-card__desc">Задачи с собеседований</span>
+          </button>
+        </div>
+
+        <!-- Язык появляется только после выбора категории -->
+        <div class="lang-section hidden" id="langSection">
+          <h3>2. Выбери язык</h3>
+
+          <div class="lang-tabs" id="langTabs">
+            <button class="lang-tab active" data-lang="js"><span class="lang-tab__icon">🟨</span> JavaScript</button>
+            <button class="lang-tab" data-lang="py"><span class="lang-tab__icon">🐍</span> Python</button>
+            <button class="lang-tab" data-lang="cs"><span class="lang-tab__icon">🟦</span> C#</button>
+          </div>
+        </div>
+
+        <button class="btn btn--primary" id="startBattle" disabled>Выбери категорию</button>
+      </div>
+
+      <div class="battle" id="battle" style="display:none">
+        <div class="battle__session" id="battleSession">Задача 1 / 6 · Побед: 0</div>
+
+        <div class="battle__timer-wrap">
+          <div class="battle__timer" id="battleTimer">02:00</div>
+          <div class="battle__status" id="battleStatus">Батл идёт...</div>
+        </div>
+
+        <div class="battle__players">
+          <div class="battle__player">
+            <div class="battle__name">🧑 Вы</div>
+            <div class="battle__bar"><div class="battle__fill battle__fill--you" id="progressYou"></div></div>
+            <div class="battle__percent" id="percentYou">0 / 3 тестов</div>
+          </div>
+          <div class="battle__vs">VS</div>
+          <div class="battle__player">
+            <div class="battle__name">🤖 Соперник <span id="enemyState" class="enemy-state"></span></div>
+            <div class="battle__bar"><div class="battle__fill battle__fill--enemy" id="progressEnemy"></div></div>
+            <div class="battle__percent" id="percentEnemy">0 / 3 тестов</div>
+          </div>
+        </div>
+
+        <div class="battle__task">
+          <div class="battle__task-cat" id="taskCategory">Задание</div>
+          <p class="battle__task-desc" id="taskDescription"></p>
+        </div>
+
+        <div class="battle__editor">
+          <label for="codeInput" id="editorLabel">Твой код:</label>
+          <textarea id="codeInput" spellcheck="false"></textarea>
+        </div>
+
+        <button class="btn btn--primary" id="checkCode">Проверить решение ▶</button>
+        <div class="battle__result" id="battleResult"></div>
+        <button class="btn btn--ghost" id="nextTask" style="display:none">Следующая задача →</button>
+      </div>
+
+      <div class="battle-summary" id="battleSummary" style="display:none">
+        <h3 id="summaryTitle">Сессия завершена</h3>
+        <p id="summaryText"></p>
+        <button class="btn btn--primary" id="restartSession">Сыграть ещё раз 🔄</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer__inner">
+    <div><b>CodeArena</b> — платформа для киберспортивных батлов</div>
+    <div>Злыднева, Кондратьев · 2026</div>
+  </div>
+</footer>
+
+<script src="js/auth.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

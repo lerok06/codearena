@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>FAQ — CodeArena</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="logo"><span class="logo__mark">CA</span> CodeArena</a>
+    <button class="nav__toggle" aria-label="Меню">☰</button>
+    <div class="nav__links" id="navLinks">
+      <a href="index.html">Главная</a>
+      <a href="demo.html">Демо-батл</a>
+      <a href="practice.html">Практика</a>
+      <a href="spectator.html">Зрительский</a>
+      
+      <a href="contacts.html">Контакты</a>
+      
+      <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+        <span class="theme-toggle__icon">🌙</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Частые вопросы</span>
+        <h2>FAQ</h2>
+        <p>Ответы на популярные вопросы о платформе CodeArena.</p>
+      </div>
+
+      <details open>
+        <summary>Что такое CodeArena?</summary>
+        <div class="details__body">
+          <p>CodeArena — это веб-платформа для проведения соревнований по программированию в формате реального времени. Вы сражаетесь с другими программистами в PvP-батлах, решая алгоритмические задачи.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Какие языки программирования поддерживаются?</summary>
+        <div class="details__body">
+          <p>На старте: JavaScript, Python и C#. В будущем планируем добавить C++, Java, Go и Rust.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Как работает система рейтинга?</summary>
+        <div class="details__body">
+          <p>Используется рейтинг ELO, как в шахматах. Победа над более сильным соперником даёт больше очков, поражение от слабого — отнимает больше. Это обеспечивает честный матчмейкинг.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Безопасно ли запускать мой код на вашей платформе?</summary>
+        <div class="details__body">
+          <p>Да. Код выполняется в изолированных контейнерах (Docker + gVisor), которые не имеют доступа к основной системе. Ваш код не может навредить серверу или другим пользователям.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Сколько стоит участие?</summary>
+        <div class="details__body">
+          <p>Базовый доступ бесплатный: участие в рейтинговых батлах, доступ к общей базе задач. Премиум-подписка открывает эксклюзивные задачи и ИИ-анализ кода. Подробнее — на странице <a href="pricing.html" style="color:var(--accent-2)">Тарифы</a>.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Можно ли смотреть батлы других игроков?</summary>
+        <div class="details__body">
+          <p>Да, у нас есть зрительский режим. Вы можете наблюдать за батлом в прямом эфире, видеть прогресс обоих игроков и общаться в чате.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer__inner">
+    <div><b>CodeArena</b> — платформа для киберспортивных батлов</div>
+    <div>Злыднева, Кондратьев · 2026</div>
+  </div>
+</footer>
+
+<script src="js/auth.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

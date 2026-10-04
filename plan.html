@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>План — CodeArena</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="logo"><span class="logo__mark">CA</span> CodeArena</a>
+    <button class="nav__toggle" aria-label="Меню">☰</button>
+    <div class="nav__links" id="navLinks">
+      <a href="index.html">Главная</a>
+      <a href="demo.html">Демо-батл</a>
+      <a href="practice.html">Практика</a>
+      <a href="spectator.html">Зрительский</a>
+      
+      <a href="contacts.html">Контакты</a>
+      
+      <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+        <span class="theme-toggle__icon">🌙</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">План проекта</span>
+        <h2>Этапы разработки</h2>
+        <p>Agile (Scrum), спринты по 2 недели.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="step"><div class="step__num"></div><div class="step__body"><h3>Проектирование архитектуры и БД</h3></div><div class="step__dur">2 недели</div></div>
+        <div class="step"><div class="step__num"></div><div class="step__body"><h3>Разработка ядра и Sandbox</h3></div><div class="step__dur">4 недели</div></div>
+        <div class="step"><div class="step__num"></div><div class="step__body"><h3>Frontend и матчмейкинг</h3></div><div class="step__dur">4 недели</div></div>
+        <div class="step"><div class="step__num"></div><div class="step__body"><h3>Платёжная система и рейтинг</h3></div><div class="step__dur">2 недели</div></div>
+        <div class="step"><div class="step__num"></div><div class="step__body"><h3>Тестирование и нагрузочные испытания</h3></div><div class="step__dur">3 недели</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Бюджет</span>
+        <h2>Базовая оценка</h2>
+      </div>
+      <div class="budget">
+        <div class="budget__item"><span>ФОТ команды (3 чел. × 3 мес.)</span><b>~ 600 000 ₽</b></div>
+        <div class="budget__item"><span>Облако на время разработки</span><b>~ 50 000 ₽</b></div>
+        <div class="budget__item"><span>Маркетинг и запуск</span><b>~ 150 000 ₽</b></div>
+        <div class="budget__item budget__item--total"><span>Итого</span><b>~ 800 000 ₽</b></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Стек</span>
+        <h2>Требуемое ПО</h2>
+      </div>
+      <div class="stack">
+        <span>Docker</span><span>Kubernetes</span><span>PostgreSQL</span>
+        <span>Redis</span><span>React</span><span>Node.js / Python</span><span>Nginx</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer__inner">
+    <div><b>CodeArena</b> — платформа для киберспортивных батлов</div>
+    <div>Злыднева, Кондратьев · 2026</div>
+  </div>
+</footer>
+
+<script src="js/auth.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
